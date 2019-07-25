@@ -1,0 +1,52 @@
+<nz-layout class="layout menu_course">
+  <nz-sider
+    nzWidth="250px"
+    nzTheme="light"
+    nzCollapsible
+    [(nzCollapsed)]="isCollapsed"
+    [nzBreakpoint]="'lg'"
+    [nzCollapsedWidth]="0"
+    [nzZeroTrigger]="zeroTrigger"
+  >
+    <ul nz-menu [nzMode]="'inline'">
+      <li nz-submenu>
+        <span title> Introduction</span>
+        <ul>
+          <li nz-menu-item>rxjs</li>
+          <li nz-menu-item>option2</li>
+          <li nz-menu-item>option3</li>
+          <li nz-menu-item>option4</li>
+        </ul>
+      </li>
+      <li nz-submenu>
+        <span title>subnav 2</span>
+        <ul>
+          <li nz-menu-item>option5</li>
+          <li nz-menu-item>option6</li>
+          <li nz-menu-item>option7</li>
+          <li nz-menu-item>option8</li>
+        </ul>
+      </li>
+      <li nz-submenu>
+        <span title>subnav 3</span>
+        <ul>
+          <li nz-menu-item>option9</li>
+          <li nz-menu-item>option10</li>
+          <li nz-menu-item>option11</li>
+          <li nz-menu-item>option12</li>
+        </ul>
+      </li>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-content>
+      <div class="inner-content">
+        <router-outlet></router-outlet>
+      </div>
+      <app-footer></app-footer>
+    </nz-content>
+  </nz-layout>
+</nz-layout>
+<ng-template #zeroTrigger>
+  <i nz-icon nzType="menu-fold" nzTheme="outline"></i>
+</ng-template>

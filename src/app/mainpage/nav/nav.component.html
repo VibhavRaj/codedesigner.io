@@ -1,0 +1,57 @@
+<div nz-row class="nav-menu">
+  <div
+    nz-col
+    [nzXs]="{ span: 24 }"
+    [nzSm]="{ span: 24 }"
+    [nzMd]="{ span: 13, offset: 2 }"
+    [nzLg]="{ span: 11, offset: 3 }"
+  >
+    <img class="logo" src="/assets/code.png" width="100%" height="100%" />
+  </div>
+  <div
+    nz-col
+    [nzXs]="{ span: 24 }"
+    [nzSm]="{ span: 24 }"
+    [nzMd]="{ span: 7, offset: 2 }"
+    [nzLg]="{ span: 7, offset: 3 }"
+  >
+    <ul nz-menu nzMode="horizontal">
+      <li nz-menu-item>
+        <nz-dropdown>
+          <a nz-dropdown> Tutorials </a>
+          <ul nz-menu nzSelectable>
+            <li nz-menu-item>
+              <a>Javascript</a>
+            </li>
+            <li nz-menu-item>
+              <a>Jquery</a>
+            </li>
+            <li nz-menu-item>
+              <a>Typescript</a>
+            </li>
+            <li nz-menu-item>
+              <a>Rxjs</a>
+            </li>
+            <li nz-menu-item>
+              <a>Angular</a>
+            </li>
+          </ul>
+        </nz-dropdown>
+      </li>
+      <li nz-menu-item>
+        <nz-dropdown>
+          <a nz-dropdown> Project </a>
+          <ul nz-menu nzSelectable>
+            <li nz-menu-item>
+              <a>Boostrap</a>
+            </li>
+            <li nz-menu-item>
+              <a>Angular</a>
+            </li>
+          </ul>
+        </nz-dropdown>
+      </li>
+      <li nz-menu-item>Blog</li>
+    </ul>
+  </div>
+</div>
